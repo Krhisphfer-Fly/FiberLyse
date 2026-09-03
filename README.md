@@ -15,7 +15,7 @@
 
 </div>
 
----
+--- 
 
 ## What is FiberLyse?
 
@@ -28,7 +28,15 @@ FiberLyse runs locally on your computer. After Python and the required packages 
 > **Current release:** FiberLyse V25  
 > V25 is primarily a visual and usability update. The scientific analysis pipeline is inherited from the preceding validated releases.
 
----
+--- 
+
+## FiberLyse in action
+
+<p align="center">
+  <img src="assets/fiberlyse-demo.gif"
+       alt="FiberLyse interface demonstration"
+       width="900">
+</p>
 
 ## Why FiberLyse?
 
