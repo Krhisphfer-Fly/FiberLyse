@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use FiberLyse in your research, please cite the software using this metadata."
+title: "FiberLyse"
+version: "25"
+date-released: 2026-09-03
+license: MIT
+repository-code: "https://github.com/Krhisphfer-Fly/FiberLyse"
+url: "https://github.com/Krhisphfer-Fly/FiberLyse"
+authors:
+  - name: "Krhisphfer-Fly"
+keywords:
+  - fiber photometry
+  - neuroscience
+  - fluorescence
+  - signal processing
+  - data analysis
+  - Python
+  - GUI
+abstract: >-
+  FiberLyse is a desktop application for transparent, GUI-based fiber photometry
+  analysis. It supports Neurophotometrics/Bonsai-style recordings and configurable
+  CSV layouts, including separate signal/reference columns and interleaved rows,
+  with artifact handling, reference fitting, normalization, frequency analysis,
+  AUC, batch comparison, and export tools.
