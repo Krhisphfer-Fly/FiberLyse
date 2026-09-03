@@ -1,13 +1,14 @@
 cff-version: 1.2.0
 message: "If you use FiberLyse in your research, please cite the software using this metadata."
 title: "FiberLyse"
-version: "25"
+version: "25.0"
 date-released: 2026-09-03
 license: MIT
 repository-code: "https://github.com/Krhisphfer-Fly/FiberLyse"
 url: "https://github.com/Krhisphfer-Fly/FiberLyse"
 authors:
-  - name: "Krhisphfer-Fly"
+  - family-names: "Salling"
+    given-names: "Christoffer"
 keywords:
   - fiber photometry
   - neuroscience
