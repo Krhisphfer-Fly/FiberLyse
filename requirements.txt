@@ -1,0 +1,6 @@
+# FiberLyse runtime dependencies
+# Tkinter is part of the standard Python installation on python.org builds.
+numpy
+pandas
+matplotlib
+scipy
