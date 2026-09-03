@@ -237,6 +237,67 @@ Graph tools also include:
 
 ---
 
+
+## Useful controls & shortcuts
+
+Most FiberLyse controls are visible directly in the GUI. The items below are the less obvious controls that are useful to know.
+
+### Plot interaction
+
+- **Drag across the Fit plot** to choose a new fitting interval. FiberLyse will recalculate the control-signal fit and downstream normalization.
+- **Double-click plot text** to rename titles, axis labels, or legend entries.
+- **Right-click a plotted trace or legend entry** to change its color using a hex code such as `#3366CC`.
+- **Graph customization…** lets you adjust axis limits, tick spacing, font sizes, and legend appearance without changing the underlying data.
+
+### Keyboard shortcuts
+
+| Shortcut | Action |
+|---|---|
+| **Ctrl+I** | Add a vertical event line or shaded time interval to the active plot. |
+| **Ctrl+U** | Open the Area Under the Curve (AUC) calculator. |
+| **Ctrl+K** | Open graph customization. |
+| **Ctrl+L** | Open graph customization focused on the legend. |
+| **Ctrl+J** | Show the mapping between loaded files and their file numbers. |
+| **Ctrl+Backspace** | Remove the most recently added event annotation while the event dialog is open. |
+
+### Artifact removal
+
+The most important artifact controls are:
+
+- **Factor** — controls how sensitive the MAD-based artifact detector is. Higher values are more conservative.
+- **Extra pad** — removes additional samples around a detected artifact.
+- **Require shared artifacts** — only removes events detected in both the study and reference signals.
+- **Linear interpolate holes** — optionally fills gaps created by artifact removal.
+
+The **Artifact remover** plot should be inspected whenever these settings are changed.
+
+### Frequency analysis
+
+FiberLyse determines the current signal sampling rate directly from the timestamps in the recording.
+
+In **Frequency settings…** you can choose:
+
+- FiberLyse standard frequency bands;
+- automatically generated bands based on the measurable frequency range;
+- custom frequency bands;
+- Welch spectrum window length and overlap;
+- Butterworth filter order.
+
+Bands that exceed the recording's Nyquist limit are marked unavailable rather than being silently adjusted.
+
+### Batch tools
+
+- **Batch compare** overlays selected recordings.
+- **Batch average** compares Group A and Group B and can display individual traces and SEM shading.
+- Batch alignment only uses the time range shared by the recordings and does not extrapolate beyond available data.
+
+### Export
+
+Use **Export…** to export multiple plots at once and optionally include the numerical data associated with each selected graph.
+
+Individual plots can also be saved directly as PNG, SVG, or PDF.
+
+
 ## Export
 
 FiberLyse can export individual graph data to Excel and save plots as common publication-friendly formats such as PNG, SVG, and PDF.
@@ -245,21 +306,6 @@ The centralized export workflow can select graph types across source files and c
 
 ---
 
-## Screenshots
-
-The repository is prepared for a visual gallery in `assets/`.
-
-Recommended first screenshots:
-
-- `assets/main-interface.png`
-- `assets/csv-wizard.png`
-- `assets/artifact-removal.png`
-- `assets/control-fit.png`
-- `assets/normalization.png`
-- `assets/frequency-analysis.png`
-- `assets/batch-analysis.png`
-
-See **[assets/README.md](assets/README.md)** for a suggested capture style and where to place each image in this README.
 
 <!--
 Once the images are uploaded, a compact gallery can be enabled here, for example:
@@ -340,8 +386,5 @@ FiberLyse is research software. Analysis settings should be chosen and validated
 
 FiberLyse is released under the **MIT License**. See [LICENSE](LICENSE).
 
-<div align="center">
-
-**FiberLyse — make the processing visible.**
 
 </div>
