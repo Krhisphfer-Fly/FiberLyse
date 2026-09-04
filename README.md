@@ -59,7 +59,6 @@ For now, either clone the repository or download it as a ZIP:
 
 **[Download the repository as ZIP](https://github.com/Krhisphfer-Fly/FiberLyse/archive/refs/heads/main.zip)**
 
-A dedicated GitHub **Release** download can be added for V25 once the repository files are in place.
 
 ### 2. Install Python
 
